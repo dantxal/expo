@@ -20,6 +20,7 @@ interface DevLauncherControllerInterface {
   fun maybeSynchronizeDevMenuDelegate()
   fun maybeInitDevMenuDelegate(context: ReactContext)
   fun getCurrentReactActivityDelegate(activity: ReactActivity, delegateSupplierDevLauncher: DevLauncherReactActivityDelegateSupplier): ReactActivityDelegate
+  fun redirectFromStartActivity(intent: Intent?)
   fun handleIntent(intent: Intent?, activityToBeInvalidated: ReactActivity?): Boolean
 
   val manifest: Manifest?
